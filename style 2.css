@@ -9,9 +9,9 @@ body {
 a {
   color: #df4839;
 }
-a:hover {
-  color: #ff705b;
-  text-decoration: none;
+
+a {
+  color: #df4839;
 }
 
 

@@ -12,23 +12,30 @@ body {
   }
   
   h1 {
-    width: 400px;
-    margin: 40px auto;
-    padding: 40px;
-    border: 5px solid #d3f8ff;
-    background-color: #d3f8ff;
-    color: rgb(0, 3, 65);
-    font-size: 250%;
-    text-align: center;
-    line-height: 1;
-    border-radius: 50%;
-    text-shadow: 1px 1px 2px #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-image: linear-gradient(to bottom, #dcf4fe, #dcf4fe);
     font-family: 'Limelight', cursive;
   }
 
+  h2 {
+    font-family: 'Limelight', cursive;
+  }
 
   .img-round {
     border-radius: 15%;
+  }
+
+  body {
+    background:#fbf9cc url(img/背景6.png) repeat-x;
+  }
+
+
+  a[target="_blank"]::after {
+    content: url(img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  a[href^="mailto:"]::after {
+    content: url(img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
   }

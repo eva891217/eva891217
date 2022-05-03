@@ -1,32 +1,51 @@
 
 body {
-    background: #dcf4fe  repeat-x;
+    background: #c2dfeb  repeat-x;
   }
   
   a {
     color: #201178;
   }
 
-  header,nav,footer {
+  header,nav,footer{
     text-align: center;
   }
+
+ 
+
   
   h1 {
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 3px solid #beebff;
+    background-color: #beebff;
     font-family: 'Limelight', cursive;
-  }
+   }
 
   h2 {
     font-family: 'Limelight', cursive;
-  }
+      padding: 10px;
+      margin-bottom: 30px;
+      border: 1px dotted #7eb4cb;
+      border-left: 10px solid #7eb4cb;
+      color: #000000;
+      border-radius: 5px 0 0 5px;
+      text-align: center;
+    }
+  
+.h-sub span{
+  font-weight: normal;
+}
 
-  .img-round {
-    border-radius: 15%;
-  }
 
-  body {
-    background:#fbf9cc url(img/背景6.png) repeat-x;
+  #contents {
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid #88cdeb;
+    background-color: #d4e6ed;
   }
-
 
   a[target="_blank"]::after {
     content: url(img/ico_blank.png);
@@ -40,6 +59,12 @@ body {
     vertical-align: middle;
   }
 
-  
-  
+
+  #contents > section + section {
+    margin-top: 80px;
+  }
+
+  .img-round {
+    border-radius: 15%;
+  }
   

@@ -22,9 +22,9 @@ header,nav,footer{
 }
 .menu a {
   display: block;
-  padding: 10px;
+  padding: 10px;  /*邊距*/
   background: #c2dfeb;
-  border-radius: 8px;
+  border-radius: 8px; 
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -39,9 +39,9 @@ h1 {
 
   h2 {
     font-family: 'Limelight', cursive;
-      padding: 10px;
+      padding: 10px;   /*邊距*/
       margin-bottom: 30px;
-      border: 1px dotted #7eb4cb;
+      border: 1px dotted #7eb4cb;   /*邊框*/
       border-left: 10px solid #7eb4cb;
       color: #000000;
       border-radius: 5px 0 0 5px;

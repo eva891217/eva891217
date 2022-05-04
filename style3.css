@@ -43,13 +43,9 @@ h1 {
       margin-bottom: 30px;
       border: 1px dotted #7eb4cb;   /*邊框*/
       border-left: 10px solid #7eb4cb;
-      color: #000000;
       border-radius: 5px 0 0 5px;
       text-align: center;
    }
-
-
-
 
   /*內容區塊邊框設定*/
   #contents {
@@ -66,6 +62,7 @@ h1 {
     margin-left: 5px;
     vertical-align: middle;
   }
+
 /*連結圖示設定*/
   a[href^="mailto:"]::after {
     content: url(img/ico_mail.png);
@@ -78,13 +75,12 @@ h1 {
     margin-top: 80px;
   }
 
-
-
 /*圓形圖片設定*/
   .img-round {
     border-radius: 15%;
   }
-
+  
+/*文繞圖設定*/
   .imgL {
     float: left;
     margin-right: 20px;

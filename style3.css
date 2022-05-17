@@ -117,11 +117,11 @@ nav li a{
     display: block;
     text-decoration: none;
     padding: 10px;
-    color: #8f8f8f;
+    color: #7c7c7e;
     
 }
 nav li a:hover{
-    background-color: #8cbbd0;
+    background-color: #7eb4cb;
     color: #000000;
     transition: background-color 1s linear,color 1s ease-in-out;
 }

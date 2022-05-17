@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+body {
+  background: #fbf9cc;
+  margin: 0px;
+}
+
+
+
+a {
+  color: #2c31ce;
+}
+
+
+h1 {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 5px solid #e5f492;
+  background-color: #d1e07f;
+  color: #fff;
+  font-size: 200%;
+  text-align: center;
+  line-height: 1;
+  border-radius: 0%;
+  text-shadow: 1px 1px 2px #a7b76c;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  background-image: linear-gradient(to bottom, #d1ca81, #dfda9d);
+  font-family: 'Limelight', cursive;
+}
+
+
+
+h2 {
+  font-family: 'Limelight', cursive;
+  padding: 10px;   /*邊距*/
+  margin-bottom: 30px;
+  border: 1px dotted #cbbf7e;   /*邊框*/
+  border-left: 10px solid #e7ee80;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  color: coral;
+}
+
+
+nav{
+  background-color: rgb(231, 194, 144);
+  text-align: right;
+}
+
+nav ul{
+  margin: 0px;
+}
+
+nav li{
+  list-style-type:none;
+  display: inline-block;
+}
+
+nav li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+nav li a:hover{
+  background-color: blanchedalmond;
+  color: coral;
+  transition: background-color 2s linear, color 2s ease-in-out;
+}

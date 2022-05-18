@@ -1,7 +1,7 @@
 /*視窗背景色設定*/
 body {
     background: #c2dfeb ;
-    margin: 20px;
+    
   }
 
   /*連結顏色設定*/
@@ -29,9 +29,7 @@ header,nav,footer{
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-.menu a:hover {
-  background: #90ddbb;
-}
+
 
 /*頁面標題設定*/
 
@@ -41,7 +39,7 @@ h1 {
 header{
     background-color: #add0df;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 
@@ -103,25 +101,26 @@ header{
 }
   
 nav{
-    background-color: #c2dfeb;
-    text-align: left;
+  background-color: #c2dfeb;
+  text-align: left;
 }
 nav ul{
-    margin: 0px;
+  margin: 0px;
 }
 nav li{
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
 }
 nav li a{
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    color: #7c7c7e;
-    
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #7c7c7e;
+  
 }
 nav li a:hover{
-    background-color: #7eb4cb;
-    color: #000000;
-    transition: background-color 1s linear,color 1s ease-in-out;
+  background-color: #7eb4cb;
+  color: #000000;
+  transition: background-color 1s linear,color 1s ease-in-out;
 }
+

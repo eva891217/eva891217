@@ -12,24 +12,25 @@ body {
 
 
 a {
-  color: #2c31ce;
+  color: #d78b27;
 }
 
 
 h1 {
   width: 300px;
+  FONT-WEIGHT: 300;
   margin: 40px auto;
   padding: 20px;
-  border: 5px solid #e5f492;
-  background-color: #d1e07f;
-  color: #fff;
+  border: 5px solid #edf1ab;
+  background-color: #f3f3b2;
+  color: rgb(255, 255, 255);
   font-size: 200%;
   text-align: center;
   line-height: 1;
   border-radius: 0%;
-  text-shadow: 1px 1px 2px #a7b76c;
+  text-shadow: 1px 1px 2px #ecae4f;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  background-image: linear-gradient(to bottom, #d1ca81, #dfda9d);
+  background-image: linear-gradient(to bottom, #e59c30,rgb(243, 212, 164));
   font-family: 'Limelight', cursive;
 }
 
@@ -43,12 +44,12 @@ h2 {
   border-left: 10px solid #e7ee80;
   border-radius: 5px 0 0 5px;
   text-align: center;
-  color: coral;
+  color: rgb(222, 170, 40);
 }
 
 
 nav{
-  background-color: rgb(231, 194, 144);
+  background-color: rgb(232 189 104);
   text-align: right;
 }
 
@@ -70,6 +71,6 @@ nav li a{
 
 nav li a:hover{
   background-color: blanchedalmond;
-  color: coral;
+  color: rgb(211, 137, 32);
   transition: background-color 2s linear, color 2s ease-in-out;
 }

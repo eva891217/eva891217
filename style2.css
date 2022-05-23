@@ -4,6 +4,9 @@
 body {
   background: #fbf9cc;
   margin: 0px;
+  background-image: url(img/photo2.jpg);
+  background-size: 1550px 230px;
+    background-repeat: repeat-x;
 }
 
 

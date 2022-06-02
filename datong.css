@@ -1,13 +1,9 @@
 /*視窗背景色設定*/
 body {
-    background: #c2dfeb ;
+    background: #fff8df ;
     
 }
 
-  /*連結顏色設定*/
-  a {
-    color: #201178;
-}
 
 /*頁首,導覽,頁尾的共通設定*/
 header,nav,footer{
@@ -24,9 +20,9 @@ header,nav,footer{
 .menu a {
   display: block;
   padding: 10px;  /*邊距*/
-  background: #c2dfeb;
+  background: #fff4e5;
   border-radius: 8px; 
-  color: rgb(0, 0, 0);
+  color: rgb(71, 71, 71);
   text-decoration: none;
 }
 
@@ -37,7 +33,7 @@ h1 {
   font-family: 'Limelight', cursive;
 }
 header{
-    background-color: #add0df;
+    background-color: #dcffd5;
     text-align: center;
     margin: 10px;
 }
@@ -47,8 +43,8 @@ header{
     font-family: 'Limelight', cursive;
       padding: 10px;   /*邊距*/
       margin-bottom: 30px;
-      border: 1px dotted #7eb4cb;   /*邊框*/
-      border-left: 10px solid #7eb4cb;
+      border: 1px dotted #c1ebb9;   /*邊框*/
+      border-left: 10px solid #c1ebb9;
       border-radius: 5px 0 0 5px;
       text-align: center;
    }
@@ -58,23 +54,10 @@ header{
   width: 960px;
   margin: 40px auto;
   padding: 40px 80px;
-  border: 1px solid #7eb4cb;
+  border: 1px solid #c1ebb9;
   background-color: #fff;
 }
 
-  /*連結圖示設定*/
-  a[target="_blank"]::after {
-    content: url(img/ico_blank.png);
-    margin-left: 5px;
-    vertical-align: middle;
-  }
-
-/*連結圖示設定*/
-  a[href^="mailto:"]::after {
-    content: url(img/ico_mail.png);
-    margin-left: 5px;
-    vertical-align: middle;
-  }
 
 /*區塊間分隔*/
   #contents > section + section {
@@ -101,7 +84,7 @@ header{
 }
   
 nav{
-  background-color: #c2dfeb;
+  background-color: #c1ebb9;
   text-align: left;
 }
 nav ul{
@@ -119,8 +102,7 @@ nav li a{
   
 }
 nav li a:hover{
-  background-color: #7eb4cb;
+  background-color: #c1ebb9;
   color: #000000;
   transition: background-color 1s linear,color 1s ease-in-out;
 }
-

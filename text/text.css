@@ -16,6 +16,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.showcase-area{
+    color: #50934a;
+}
+
+
 /* ///////////..utility classes../////////// */
 
 .container {
@@ -62,14 +67,14 @@ body {
     background: #fff;
     color: #000;
     opacity: 0.85;
-    height: 50px;
+    height: 80px;
     z-index: 12;
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    height: 95px;
     align-items: center;
 }
 
@@ -109,7 +114,7 @@ body {
     height: 50vh;
     background: linear-gradient(rgba(240, 240, 240, 0.144),
             rgba(255, 255, 255, 0.336)),
-        url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+        url("datong.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

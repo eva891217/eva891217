@@ -1,0 +1,191 @@
+/*視窗背景色設定*/
+body {
+    background: #ffffff ;
+    background-image: url(background.jpg);
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: rgb(148, 148, 148);
+}
+
+nav{
+    background-color: rgb(232 189 104);
+    text-align: right;
+    
+}
+  
+nav ul{
+    margin: 0px;
+}
+  
+nav li{
+    list-style-type:none;
+    display: inline-block;
+}
+  
+nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+  
+nav li a:hover{
+    background-color: blanchedalmond;
+    color: rgb(211, 137, 32);
+    transition: background-color 2s linear, color 2s ease-in-out;
+}
+
+#menu {
+	height:30px;
+	text-align: center;
+	font-size:1em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#menu ul {
+	background-color: rgb(255, 255, 255);
+}
+#menu ul li a {
+	color:#71c179;
+	text-decoration:none;
+	line-height: 30px;
+}
+#menu ul li ul {
+	background:#ffffff;
+}
+#menu ul li ul li a {
+	font-size:0.8em;
+	color:#71c179;
+	text-decoration:none;
+}
+#menu ul li:hover, #menu ul li a:hover {
+	background:#ffffff;
+}
+#menu ul li:hover a {
+	color:#71c179;
+}
+#menu ul li ul li:hover, #menu ul li ul li a:hover {
+	background:#ffffff;
+}
+#menu ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #71c179;
+    transition: background-color 1s linear,color 1s ease-in-out;
+}
+#menu ul li ul a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #71c179;
+    transition: background-color 1s linear,color 1s ease-in-out;
+}
+#menu ul li ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #71c179;
+    transition: background-color 1s linear,color 1s ease-in-out;
+}
+#menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+    overflow:auto;
+}
+#menu ul li {
+	float:left;
+}
+#menu ul li a {
+	display:block;
+	float:left;
+	height:30px;
+	width: 100px;
+	text-align: center;
+}
+#menu ul li ul {
+	position:absolute;
+	width:100px;
+	overflow:visible;
+	clear:left;
+	margin-top: 30px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+#menu ul li ul li {
+	float:none;
+	text-align: center;
+}
+#menu ul li ul li a {
+	float:none;
+	width: 100%;
+}
+#menu ul li ul li ul {
+	margin-top: -30px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 100px;
+	width: 100%;
+}
+#menu ul li ul {
+	visibility:hidden;
+}
+#menu ul li:hover ul {
+	visibility:visible;
+}
+#menu ul li:hover ul li ul {
+	visibility:hidden;
+}
+#menu ul li ul li:hover ul {
+	visibility:visible;
+}
+#menu ul li ul li:hover ul li ul {
+	visibility:hidden;
+}
+#header img{
+    width: 100%;
+}
+
+
+/*內容區塊邊框設定*/
+#contents {
+    width: 1350px;
+    margin: 00px auto;
+    padding: 40px 80px;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+}
+
+h1{
+    font-weight: 150;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted rgb(174, 219, 164);
+    border-left: 10px solid rgb(174, 219, 164);
+    color: rgb(70, 70, 70);
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+    font-size: 30px;
+}
+
+h3{
+    font-weight: 150;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted rgb(174, 219, 164);
+    border-left: 10px solid rgb(174, 219, 164);
+    color: rgb(70,70,70);
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+    font-size: 30px;
+}
+
+#footer h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+    background: #ffffff;
+}
+
+
+

@@ -5,7 +5,7 @@ body, html {
     color: #777;
   }
   
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -15,20 +15,22 @@ body, html {
   
   }
   .bgimg-1 {
-    background-image: url("https://www.teahub.io/photos/full/5-53489_photo-wallpaper-tree-coffee-coffee-fondos-de-pantalla.jpg");
+    background-image: url("sky.jpg");
     min-height: 100%;
   }
   
   .bgimg-2 {
-    background-image: url("https://images3.alphacoders.com/941/thumbbig-94135.webp");
+    background-image: url("sky.jpg");
     min-height: 400px;
   }
   
   .bgimg-3 {
-    background-image: url("https://images6.alphacoders.com/654/thumbbig-654775.webp");
+    background-image: url("tree.jpg");
     min-height: 400px;
   }
-  
+  .bgimg-4{
+
+  }
   .caption {
     position: absolute;
     left: 0;

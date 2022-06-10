@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+/*導覽列樣式設定*/
+body,ul{
+    margin: 0px;
+}
+
+header{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+}
+nav{
+    background-color: rgb(156, 216, 216);
+}
+nav ul{
+    display: flex;
+    justify-content: right;
+}
+nav li{
+    list-style-type: none;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+nav a:hover{
+    background-color: rgb(143, 210, 202);
+    color: rgb(85, 85, 85);
+    transition: background-color 1s linear, color 1s ease-in
+}
+
+/*標題列樣式設定*/
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(166, 219, 219, 80%);
+}
+.title{
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+
+/*相片清單樣式設定*/
+#photolist ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+#photolist li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+#photolist img{
+    border-radius: 20%;
+    box-shadow: 5px 5px 10px rgb(101, 100, 100);
+}
+
+#photolist .emptyitem{
+    width: 250px;
+}
+
+.gotop{
+    font-size: 50px;
+    color: rgba(166, 219, 219, 80%);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}

@@ -65,10 +65,7 @@ header a:last-child {
   background-color: #55B4B0;
 }
 
-.content section:nth-child(4) {
-  background-color: #E15D44;
-}
-
-.content section:nth-child(5) {
-  background-color: #98B4D4;
+nav{
+    text-align: center;
+} 
 }

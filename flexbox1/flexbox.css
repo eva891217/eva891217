@@ -1,0 +1,317 @@
+
+
+
+
+
+/*箭頭旋轉*/
+li:hover > .dropdown-toggle:after {
+    transform: rotate(180deg);
+}
+li li:hover > .dropdown-toggle:after {
+    transform: rotate(90deg);
+}
+li .dropdown-toggle:after {
+    transition: all 0.5s;
+}
+li.show > .dropdown-toggle:after {
+    transform: rotate(180deg);
+}
+li li.show > .dropdown-toggle:after {
+    transform: rotate(90deg);
+}
+/*標題列*/
+.navbar {
+    background-color: #FFFFFF!important;
+    box-shadow: rgba(159, 159, 159, 0.2) 0 7px 29px 0;
+    padding: 0 !important;
+}
+/*標題選單*/
+.navbar .nav-link {
+    text-transform: uppercase;
+    color: #8d8d8d!important;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 35px 0;
+    position: relative;
+    white-space: nowrap;
+}
+.navbar .nav-link:hover {
+    color: #96c291!important;
+}
+/*陰影*/
+.navbar .dropdown-menu {
+    top: 99%!important;
+    padding: 0;
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    margin: 0 !important;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0!important;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #f2f2f2!important;
+}
+.dropdown-menu li:last-child {
+    border-bottom: 0 solid #f2f2f2!important;
+}
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    color: #252525!important;
+    font-weight: 600;
+    background-color: #fff!important;
+    background: linear-gradient(to right, #96c291 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+}
+
+.dropdown-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #96c291!important;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    z-index: 1;
+}
+.dropdown-item:hover {
+    padding-left: 30px;
+    background-color: #96c291!important;
+    color: #FFF!important;
+    background-position: left bottom;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: 45%;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    top: 100%;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: 19px;
+}
+
+
+@media screen and (max-width: 991px) {
+  /* Nav responsibe css start */
+    .navbar {
+        padding: 15px !important;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+        z-index: 99;
+        background-color: #fff;
+        overflow-y: scroll;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+
+    }
+    .navbar-collapse ul {
+        height: 100%;
+    }
+
+    .navbar-collapse ul li {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: transparent!important;
+        border: transparent!important;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -3px);
+        transform: rotate(45deg) translate(-5px, -3px);
+    }
+
+    .navbar .nav-link {
+        padding: 15px !important;
+    }
+    .dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: none;
+    }
+    .dropdown-menu.show {
+        display: block!important;
+        margin: 0;
+        border: 0;
+    }
+
+    .dropdown-item::before {
+        content: '';
+        width: 0;
+        height: 100%;
+        background-color: transparent!important;
+
+    }
+
+    .navbar .dropdown-menu {
+        box-shadow: none;
+        padding: 0 12px;
+    }
+
+    .dropdown-item {
+        background: #fff!important;
+    }
+    .navbar .nav-link:hover {
+        color: #252525!important;
+    }
+    li.show > .dropdown-toggle:after {
+        transform: rotate(180deg)!important;
+    }
+    /* sous-Niveaux suivants */
+    li li.show > .dropdown-toggle:after {
+        transform: rotate(90deg)!important;
+    }
+
+    .dropdown-menu li {
+        border: transparent!important;
+    }
+    .dropdown-item:hover {
+        padding: 0.5rem 1.5rem;
+        background-color: #FFF!important;
+        color: #252525!important;
+        background-position: left bottom;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        border-bottom: 1px solid #DBEEFD;
+    }
+
+    .dropdown-item {
+        border-bottom: 1px solid #DBEEFD;
+    }
+  
+}
+
+/*body.css*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("https://www.teahub.io/photos/full/5-53489_photo-wallpaper-tree-coffee-coffee-fondos-de-pantalla.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("https://images3.alphacoders.com/941/thumbbig-94135.webp");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("https://images6.alphacoders.com/654/thumbbig-654775.webp");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+
+
+
+
+#footer h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+    background: #ffffff;
+}

@@ -1,71 +1,427 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-*, *:before, *:after {
-  box-sizing: border-box;
+*:not(ul) {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
 }
-
-body, html, div, p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  top:0;
-  left: 0;
-  z-index: 1000;
-  text-align: center;
-  background-color: #fff;
-}
-
-header nav {
-  padding-top: 15px;
-  padding-bottom: 15px;
+*:not(ul)::after, *:not(ul)::before {
+	box-sizing: border-box;
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 2.5em;
-  text-align: center;
-  margin-bottom: 3rem;
+	font-size: 2.5rem;
 }
 
-header a {
-  color: #000;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin-right: 30px;
+h2 {
+	font-size: 2rem;
 }
 
-header a:last-child {
-  margin-right: 0;
+h3 {
+	font-size: 1.75rem;
 }
 
-.content {
-  margin-top: 48px;
-  width: 100%;
+h4 {
+	font-size: 1.5rem;
 }
 
-.content section {
-  min-height: 500px;
+h5 {
+	font-size: 1.25rem;
 }
 
-.content section:nth-child(1) {
-  background-color: #DFCFBE;
+h6 {
+	font-size: 1rem;
 }
 
-.content section:nth-child(2) {
-  background-color: #9B2335;
+a {
+	text-decoration: none;
+	color: #464646;
 }
 
-.content section:nth-child(3) {
-  background-color: #55B4B0;
+ul {
+	margin: auto;
+	box-sizing: border-box;
 }
 
-nav{
-    text-align: center;
-} 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	font-family: inherit;
+	margin-bottom: 1rem;
+	line-height: 1.5;
+	color: inherit;
+}
+
+.btn-primary {
+	display: inline-block;
+	cursor: pointer;
+	color: #FFF;
+	padding: 0.5rem 1.5rem;
+	margin: 1rem auto;
+	text-decoration: none;
+	border-radius: 2px;
+	background: black;
+	text-align: center;
+	transition: all .5s ease-in-out;
+}
+.btn-primary:hover {
+	background: #3C3C3C;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-white {
+	color: #FFF;
+}
+
+.site-title {
+	line-height: 0.75;
+	margin: 0;
+	font-size: 3.1rem;
+	text-transform: uppercase;
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 576px) {
+	.site-title {
+		font-size: 4rem;
+	}
+}
+@media (min-width: 768px) {
+	.site-title {
+		font-size: 5rem;
+	}
+}
+
+.section-title {
+	color: #3C3C3C;
+}
+
+.header-background {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body {
+	font-size: 0.875rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.5;
+	font-family: 'Saira', sans-serif;
+	background: #E6E6E6;
+	color: #0F0F0F;
+}
+@media (min-width: 576px) {
+	body {
+		font-size: 0.995rem;
+	}
+}
+@media (min-width: 768px) {
+	body {
+		font-size: 1rem;
+	}
+}
+
+/* Container settings */
+.grid-wrapper {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: [full-start]
+		minmax(1rem, 1fr)
+		[medium-start]
+		minmax(1rem, 960px)
+		[medium-end]
+		minmax(1rem, 1fr)
+		[full-end];
+	grid-template-columns: [full-start]
+		minmax(1rem, 1fr)
+		[medium-start]
+		minmax(1rem, 960px)
+		[medium-end]
+		minmax(1rem, 1fr)
+		[full-end];
+	grid-gap: 1rem;
+	/* Long explanation: So basically this grid-wrapper makes 3 columns. The first column
+     and the last column have a max size of 1fr, therefore they will behave as percentage based columns, auto adjusting themselves based on the width of the viewport. The middile column has a max size of 960px and is used to hold the main content. */
+	/* Gets all child elements of the grid-wrapper that have the class of .full-width-container and assigns them to the middle column. */
+	/* Gets all child elements that have the .full-width-container class.
+     Quick note: While I want this container to be full width for backgrounds, I still
+     want the inside to be only a max of 960px, therefore, I size the inside with the same grid as the inside element's granparent, there is probably a better way to do that I just couldn't figure it out. The reason I just didn't simply make any
+     inside elments have a width of 960px is because I want the inside to respect the grid established by the grid-wrapper and doing it that way misaligns the way the medium-width-container and the full-width-container handle their contents when the window
+     is rezized to smaller phone like proportions.
+     */
+}
+.grid-wrapper > .medium-width-container {
+	-ms-grid-column: medium;
+	grid-column: medium;
+	width: 100%;
+	margin-top: 4rem;
+}
+.grid-wrapper > .full-width-container {
+	-ms-grid-column: full;
+	grid-column: full;
+	width: 100%;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: inherit;
+	grid-template-columns: inherit;
+	-ms-grid-rows: minmax(min-content, max-content);
+	/* The minmax used here allows the navbar to preserve its auto height so to speak, otherwise the navbar would span about 50% or so height depending on the height placed on the header background. By setting a minmax containing the min-content and the max-content of each row, each row will only be as big or as minimun as its contents allows. I did it this way because I did not want to set a specific height amount for the header-background as when it is resized the height will never truly stay in proportion when it is set. */
+	grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
+	grid-template-rows: minmax(min-content, max-content);
+	/* The default for elements inside the .full-width-container class is to span the entire
+          width of the container, but the .align-middle class allows elements to be placed within the
+          middle container. */
+}
+.grid-wrapper > .full-width-container > * {
+	-ms-grid-column: full;
+	grid-column: full;
+}
+.grid-wrapper > .full-width-container > .align-middle {
+	-ms-grid-column: medium;
+	grid-column: medium;
+}
+
+/* Inner grid template */
+.inner-grid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (1fr)[12];
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 1rem;
+}
+.inner-grid .col-1,
+.inner-grid .col-2,
+.inner-grid .col-3,
+.inner-grid .col-4,
+.inner-grid .col-5,
+.inner-grid .col-6,
+.inner-grid .col-7,
+.inner-grid .col-8,
+.inner-grid .col-9,
+.inner-grid .col-10,
+.inner-grid .col-11,
+.inner-grid .col-12 {
+	-ms-grid-column: span 12;
+	grid-column: span 12;
+}
+@media (min-width: 576px) {
+	.inner-grid .col-12 {
+		-ms-grid-column: span 12;
+		grid-column: span 12;
+	}
+	.inner-grid .col-11 {
+		-ms-grid-column: span 11;
+		grid-column: span 11;
+	}
+	.inner-grid .col-10 {
+		-ms-grid-column: span 10;
+		grid-column: span 10;
+	}
+	.inner-grid .col-9 {
+		-ms-grid-column: span 9;
+		grid-column: span 9;
+	}
+	.inner-grid .col-8 {
+		-ms-grid-column: span 8;
+		grid-column: span 8;
+	}
+	.inner-grid .col-7 {
+		-ms-grid-column: span 7;
+		grid-column: span 7;
+	}
+	.inner-grid .col-6 {
+		-ms-grid-column: span 6;
+		grid-column: span 6;
+	}
+	.inner-grid .col-5 {
+		-ms-grid-column: span 5;
+		grid-column: span 5;
+	}
+	.inner-grid .col-4 {
+		-ms-grid-column: span 4;
+		grid-column: span 4;
+	}
+	.inner-grid .col-3 {
+		-ms-grid-column: span 3;
+		grid-column: span 3;
+	}
+	.inner-grid .col-2 {
+		-ms-grid-column: span 2;
+		grid-column: span 2;
+	}
+	.inner-grid .col-1 {
+		-ms-grid-column: span 1;
+		grid-column: span 1;
+	}
+}
+
+/* Navigation styles */
+.header-navbar-container {
+	width: 100%;
+	background: #FFF;
+	border-bottom: 1px solid rgba(70, 70, 70, 0.2);
+}
+.header-navbar-container .navbar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	/* Different styles can be used depending on how you want
+             screen readers to interpret the checkbox, because this
+             is only for demo purposes, I'll set the checkbox to
+             not display at all */
+}
+.header-navbar-container .navbar .brand-title {
+	display: flex;
+	align-items: center;
+}
+.header-navbar-container .navbar .brand-title h1 {
+	margin: 0;
+}
+.header-navbar-container .navbar #nav-checkbox {
+	/*position: absolute;
+               top: 0;
+               right: 0;
+               opacity: 0;*/
+	display: none;
+}
+.header-navbar-container .navbar #nav-label {
+	position: relative;
+	padding: 0.5rem 0.6rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+	border: 1px solid rgba(70, 70, 70, 0.4);
+	border-radius: 5px;
+}
+.header-navbar-container .navbar #nav-checkbox:checked ~ nav {
+	height: 45vh;
+}
+.header-navbar-container .navbar nav {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 0;
+	z-index: 4;
+	overflow: hidden;
+	left: 0;
+	transition: height 0.5s ease-in-out;
+}
+.header-navbar-container .navbar nav ul {
+	padding: 0;
+	background: #FFF;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	border: 1px solid rgba(70, 70, 70, 0.4);
+}
+.header-navbar-container .navbar nav ul li {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: right;
+	border-bottom: 1px solid rgba(70, 70, 70, 0.4);
+}
+.header-navbar-container .navbar nav ul li:last-child {
+	border: 0;
+}
+.header-navbar-container .navbar nav ul li a {
+	width: 100%;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.header-navbar-container .navbar nav ul li a:hover {
+	background: #464646;
+	color: #FFF;
+	font-weight: 700;
+}
+@media (min-width: 576px) {
+	.header-navbar-container .navbar {
+		height: 100%;
+		padding: 0;
+		align-items: stretch;
+	}
+	.header-navbar-container .navbar #nav-label {
+		display: none;
+	}
+	.header-navbar-container .navbar #nav-checkbox:checked ~ nav {
+		height: 100%;
+	}
+	.header-navbar-container .navbar nav {
+		position: static;
+		width: auto;
+		height: auto;
+		transition: none;
+	}
+	.header-navbar-container .navbar nav ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		width: auto;
+		border: none;
+		height: 100%;
+	}
+	.header-navbar-container .navbar nav ul li {
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		text-align: left;
+		border-bottom: none;
+		height: 100%;
+	}
+	.header-navbar-container .navbar nav ul li a {
+		height: 100%;
+		width: 100%;
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+		position: relative;
+		transition: all 0.5s ease-in-out;
+	}
+	.header-navbar-container .navbar nav ul li a:before {
+		content: '';
+		position: absolute;
+		bottom: 20%;
+		height: 2px;
+		width: 70%;
+		background-color: #3C3C3C;
+		transform: scaleX(0);
+		display: block;
+		margin: 0 auto;
+		transition: all 0.5s ease-in-out;
+	}
+	.header-navbar-container .navbar nav ul li a:hover {
+		background: transparent;
+		color: #464646;
+		font-weight: initial;
+		transition: all 0.5s ease-in-out;
+	}
+	.header-navbar-container .navbar nav ul li a:hover:before {
+		transform: scaleX(1);
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+.header-background {
+	background-image: url("sky.jpg");
+	background-position: bottom;
+	min-height: 100vh; /* For codepen purposes*/
+}
+.header-background .align-middle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

@@ -1,187 +1,35 @@
-
-
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-
-  <meta charset="UTF-8">
-  
-<link rel="shortcut icon" href="./images/favicon1.ico" type="image/x-icon">
-
-
-  <title>大同育幼院</title>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,700&display=swap" rel="stylesheet">
-  
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
-<link rel="stylesheet" href="index.css">
-
-  
-
-
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
-<body translate="no" >
-  <div class="smooth">
-  <header id="top">
-    <a  href="index.html" >
-      <img id="header-img" src="./images/logo1.png" alt="logo" width="186" height="55" >
-    </a>
+<body>
     <nav>
-      <ul>
-        <li><a href="#home" >前言</a></li>
-        <li><a href="about.html">認識家扶</a></li>
-        <li><a href="service.html">服務介紹</a></li>
-        <li><a href="make.html" target="_blank">製作者</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="../workresume.html">關於我</a></li>
+            <li><a href="index.html">作品集</a></li>
+            <li><a href="mailto:110111207@mail.aeust.edu.tw" target="_blank">聯絡方式</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <section id="home" style="background-image: url(./images/one4.jpg)">
-      <div class="content" style="opacity: 0.87;">
-        <div>
-
-          <svg class="title">
-            <text x="0" y="40">研究動機&研究目的</text>
-            <path d="M 0 66 50 61"></path>
-          </svg>
-          <p>
-            大同育幼院是我們第一次這麼近距離的接觸和了解有關育幼院產業的內容｡
-            <p>從這一次去採訪的過程中我們覺得，育幼院的存在很重要也很有意義，<p>所以才會選擇以大同育幼院為主題，讓大家對它有進一步的了解｡
-            <p>同時也希望如果你願意，可以用自己的方式去守護或支持這些小朋友們｡
-            <p>讓他們能在溫暖且有愛的環境下平安快樂長大｡
-          </p>
-        </div>
-      
-      </div>
-    </section>
-
-</section>
-
-
-
-
-
-
-
-    
-  </main>
-  <footer id="bottom">
-    <div class="widgets">
-      <div class="f_logo">
-        <h3 class="foo_logo">大同育幼院</h3>
-      </div>
-      <div class="widget">
-        <h5>社群</h5>
-        <ul>
-          <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/tfcf60" title="Facebook" target="_blank"> 家扶基金會大同育幼院</a></li>
-        </ul>
-      </div>
-      
-      
-      <div class="widget">
-        <h5>聯絡資訊</h5>
-        <ul>
-          <li><i class="fa fa-map-o" aria-hidden="true"></i><a href="https://goo.gl/maps/Kr3XD6JA8XhF6M8e7" target="_blank"> 新北市中和區圓通路121巷2號</a>
-          <li><i class="fa fa-phone" aria-hidden="true"></i> 02-22472455
-          <li><i class="fa fa-envelope-o" aria-hidden="true"> </i> <a href="mailto:dt@ccf.org.tw" target="_blank" >dt@ccf.org.tw</a>
-          <li><i class="fa fa-clock-o" aria-hidden="true"> </i> 週一至週六 8：00 ～ 17：00
-        </ul>
-      </div>
-    </div>
-    <div class="copy">
-      <p> 2022/06/15 <span class="heart">&#9829; </span></p>
-      <p><a href="#home">Back &#x2191; to top</a></p>
-    </div>
-  </footer>
-</div>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
-      <script id="rendered-js" >
-function scrollh() {
-  $(".smooth").on("scroll", function () {
-    let scrollPos = $(this).scrollTop();
-    $(".content").css({
-      opacity: 1 - scrollPos / 400 });
-
-  });
-}
-scrollh();
-
-$(".autoplay").on("init", function (slick) {
-  $(".slick-dots").on("click", function () {
-    $(".autoplay").slick("slickPause");
-  });
-}).slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-  {
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2 } },
-
-
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1 } }] });
-
-
-
-
-
-$(".tes").on("init", function (slick) {
-  $(".slick-dots").on("click", function () {
-    $(".tes").slick("slickPause");
-  });
-}).slick({
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-  {
-    breakpoint: 991,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1 } }] });
-
-
-
-
-
-$('.widget:first > ul > li:first').addClass('active');
-$('.widget:first > ul > li > a:first').addClass('active');
-//# sourceURL=pen.js
-    </script>
-
-  
-
+<h1>王宜靜</h1>
+<h2>作品集</h2>
+<ul>
+    <li><a href="../work/cat.html">貓咪大集合</a></li>
+    <li><a href="../work/inline.html">行內樣式表</a></li>
+    <li><a href="../work/internl.html">內部樣式表</a></li>
+    <li><a href="../work/external.html">外部樣式表</a></li>
+    <li><a href="../work/resume.html">個人網頁&雙層導覽</a></li>
+    <li><a href="https://www.figma.com/proto/ruXL9WyJ4DyF3P62AyijOo/%E5%80%8B%E4%BA%BA%E7%B6%B2%E9%A0%81?node-id=79%3A2&starting-point-node-id=79%3A2"target="_blank">figma</a></li>
+    <li><a href="../work/float.html">float排版練習</a></li>
+    <li><a href="../flexbox/flexbox.html">flexbox練習</a></li>
+    <li><a href="index1.html">期末專案報告</a></li>
+</ul>
 </body>
-
 </html>
- 
+
+

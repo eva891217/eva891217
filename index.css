@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+
+body {
+  background: #fbf9cc;
+  margin: 0px;
+  background-image: url(./work/images2/photo.jpg)
+  background-size: 1550px 230px;
+    background-repeat: repeat-x;
+}
+
+
+
+a {
+  color: #d78b27;
+}
+
+
+h1 {
+  width: 300px;
+  FONT-WEIGHT: 300;
+  margin: 40px auto;
+  padding: 20px;
+  border: 5px solid #edf1ab;
+  background-color: #f3f3b2;
+  color: rgb(255, 255, 255);
+  font-size: 200%;
+  text-align: center;
+  line-height: 1;
+  border-radius: 0%;
+  text-shadow: 1px 1px 2px #ecae4f;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  background-image: linear-gradient(to bottom, #e59c30,rgb(243, 212, 164));
+  font-family: 'Limelight', cursive;
+}
+
+
+
+h2 {
+  font-family: 'Limelight', cursive;
+  padding: 10px;   /*邊距*/
+  margin-bottom: 30px;
+  border: 1px dotted #cbbf7e;   /*邊框*/
+  border-left: 10px solid #e7ee80;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  color: rgb(222, 170, 40);
+}
+
+
+nav{
+  background-color: rgb(232 189 104);
+  text-align: right;
+}
+
+nav ul{
+  margin: 0px;
+}
+
+nav li{
+  list-style-type:none;
+  display: inline-block;
+}
+
+nav li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+nav li a:hover{
+  background-color: blanchedalmond;
+  color: rgb(211, 137, 32);
+  transition: background-color 2s linear, color 2s ease-in-out;
+}

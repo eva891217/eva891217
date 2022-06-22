@@ -83,7 +83,7 @@ figure figcaption h3 {
 }
 figure figcaption .tag {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
   font-size: 0.9375em;
   font-weight: 400;
   text-transform: uppercase;

@@ -9,7 +9,7 @@
   }
   
   body {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/wine-bg.jpg") no-repeat center center fixed;
+    background: url("./images/background.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -171,7 +171,7 @@
   @media only screen and (min-width: 815px) {
     .slideshow-nav #prev {
       border-right: 0;
-      margin-left: 2em;
+      margin-left: 1em;
     }
   }
   .slideshow-nav #next {
@@ -179,7 +179,7 @@
   }
   @media only screen and (min-width: 815px) {
     .slideshow-nav #next {
-      margin-right: 2em;
+      margin-right: 1em;
     }
   }
   .slideshow-nav #thumbnails {
@@ -195,7 +195,7 @@
       line-height: 100px;
     }
     .slideshow-nav #thumbnails .thumb img {
-      width: 75px;
+      width: 70px;
       height: 75px;
       border: 3px solid #fff;
       -moz-border-radius: 50px;

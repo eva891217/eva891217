@@ -2,35 +2,33 @@
 
 
 body {
-  background: #fbf9cc;
+  background: rgb(210 227 250);
   margin: 0px;
-  background-image: url(./work/images1/photo2.jpg);
-  background-size: 1500px 230px;
-    background-repeat: repeat-x;
+
 }
 
 
 
 a {
-  color: #d78b27;
+  color: rgb(152 156 216);
 }
 
 
 h1 {
-  width: 300px;
+  width: 200px;
   FONT-WEIGHT: 300;
   margin: 40px auto;
-  padding: 20px;
-  border: 5px solid #edf1ab;
-  background-color: #f3f3b2;
+  padding: 15px;
+  border: 3px solid rgb(210 227 250);
+  background-color: rgb(210 227 250);
   color: rgb(255, 255, 255);
   font-size: 200%;
   text-align: center;
   line-height: 1;
   border-radius: 0%;
-  text-shadow: 1px 1px 2px #ecae4f;
+  text-shadow: 2px 2px 2px #c0b3d2;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  background-image: linear-gradient(to bottom, #e59c30,rgb(243, 212, 164));
+  background-image: linear-gradient(to bottom, rgb(225 229 255),rgb(170 183 254));
   font-family: 'Limelight', cursive;
 }
 
@@ -40,16 +38,16 @@ h2 {
   font-family: 'Limelight', cursive;
   padding: 10px;   /*邊距*/
   margin-bottom: 30px;
-  border: 1px dotted #cbbf7e;   /*邊框*/
-  border-left: 10px solid #e7ee80;
+  border: 1px dotted rgb(172 184 255);   /*邊框*/
+  border-left: 8px solid rgb(176 187 252);
   border-radius: 5px 0 0 5px;
   text-align: center;
-  color: rgb(222, 170, 40);
+  color: rgb(152 156 216);
 }
 
 
 nav{
-  background-color: rgb(232 189 104);
+  background-color: rgb(176 186 244);
   text-align: right;
 }
 

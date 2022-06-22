@@ -47,7 +47,7 @@ h2 {
 
 
 nav{
-  background-color: rgb(176 186 244);
+  background-color: rgb(179 191 255);
   text-align: right;
 }
 
@@ -68,7 +68,7 @@ nav li a{
 }
 
 nav li a:hover{
-  background-color: blanchedalmond;
-  color: rgb(211, 137, 32);
+  background-color: rgb(152 156 216);
+  color: rgb(255, 255, 255);
   transition: background-color 2s linear, color 2s ease-in-out;
 }
